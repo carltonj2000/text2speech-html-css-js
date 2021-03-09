@@ -138,7 +138,6 @@
 
         document.querySelector("#speak").addEventListener("click", () => {
           t = text.value.trim() || "No text entered. Please enter text.";
-          console.log(text.value);
           app.speech.text = t;
           speechSynthesis.speak(app.speech);
         });
